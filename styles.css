@@ -112,3 +112,32 @@ button {
     border: none;
     background-color: transparent;
 }
+
+#toggle-circle {
+    position: absolute;
+    top: 6px;
+}
+
+.left {
+    left: 11px;
+    transition: all 0.5s;
+}
+
+.right {
+    left: calc(100% - 41px);
+    transition: all 0.5s;
+}
+
+#moon {
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    left: 18px;
+}
+
+#sun {
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    right: 17px;
+}
