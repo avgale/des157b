@@ -1,0 +1,46 @@
+#myVideo {
+    width: 100%;
+    transition: 1s;
+}
+
+#fullscreen {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+}
+
+#fullscreen:hover {
+    cursor: pointer;
+}
+
+#container {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    position: relative;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    display: grid;
+    place-content: center;
+    left: calc(50%);
+    top: calc(50%);
+    transform: translate(-50%, -50%);
+}
+
+#popups {
+    font-size: 8em;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+}
