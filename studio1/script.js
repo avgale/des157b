@@ -69,6 +69,7 @@
         clearTimeout(go);
         clearInterval(interval);
         popups.innerHTML = "3";
+        popups.style.fontSize = "8em";
         sec.className = "showing";
         vid.currentTime = 0;
         vid.pause();
