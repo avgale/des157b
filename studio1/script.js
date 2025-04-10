@@ -6,10 +6,20 @@
     const sec = document.querySelector("section");
     let popups = document.querySelector("#popups");
 
-    setTimeout(function(){popups.innerHTML = "2"}, 1000);
-    setTimeout(function(){popups.innerHTML = "1"}, 2000);
-    setTimeout(startVid, 3000);
-    setTimeout(startInterval, 3000);
+    let three;
+    let two;
+    let one;
+    let go;
+    let interval;
+
+    run();
+    
+    function run() {
+        three = setTimeout(function(){popups.innerHTML = "2"}, 1000);
+        two = setTimeout(function(){popups.innerHTML = "1"}, 2000);
+        one = setTimeout(startVid, 3000);
+        go = setTimeout(startInterval, 3000);
+    }
 
     fs.addEventListener('click', function() {
         if (!document.fullscreenElement) {
@@ -37,6 +47,10 @@
             sec.className = "hidden";
             vid.style.filter = "none";
         }
+
+        if (27 < vid.currentTime) {
+            restart();
+        }
     }
 
     function startVid() {
@@ -45,6 +59,19 @@
     }
 
     function startInterval() {
-        setInterval(checkTime, 1000);
+        interval = setInterval(checkTime, 1000);
+    }
+
+    function restart() {
+        clearTimeout(three);
+        clearTimeout(two);
+        clearTimeout(one);
+        clearTimeout(go);
+        clearInterval(interval);
+        popups.innerHTML = "3";
+        sec.className = "showing";
+        vid.currentTime = 0;
+        vid.pause();
+        run();
     }
 })();
