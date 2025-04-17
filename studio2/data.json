@@ -1,0 +1,35 @@
+{
+    "year":{
+        "2023":{
+            "april": 0,
+            "may": 0,
+            "june": 0,
+            "july": 1,
+            "august": 2,
+            "september": 2,
+            "october": 2,
+            "november": 2,
+            "december": 3
+        },
+        "2024":{
+            "january": 4,
+            "february": 6,
+            "march": 6,
+            "april": 6,
+            "may": 7,
+            "june": 7,
+            "july": 7,
+            "august": 8,
+            "september": 8,
+            "october": 8,
+            "november": 9,
+            "december": 9 
+        },
+        "2025":{
+            "january": 10,
+            "february": 10,
+            "march": 10,
+            "april": 11
+        }
+    }
+}

@@ -1,0 +1,172 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page styling */
+
+body {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: #2E2E2E;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+h1 {
+    padding: 0.5em;
+}
+
+main {
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#slider {
+    width: 1104px;
+    height: 20px;
+    background-color: #878787;
+    border-radius: 10px;
+    position: relative;
+}
+
+#slider-btn {
+    position: absolute;
+    width: 40px;
+    top: -10px;
+    left: 96%;
+}
+
+#dots {
+    margin: 1.5em;
+}
+
+#labels {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+}
+
+.month-label {
+    text-align: center;
+    line-height: 1.5;
+}
+
+section {
+    height: 308px;
+    width: 1092px;
+    display: flex;
+    gap: 10px;
+    align-items: self-end;
+    justify-content: flex-end;
+}
+
+#july2023 {
+    width: 34px;
+    height: 28px; /* start w/ 0, calc (28* height from data)*/
+    background-color: #D73F2A;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+
+#august2023, #september2023, #october2023, #november2023 {
+    width: 34px;
+    height: 56px;
+    background-color: #DF5F22;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+
+#december2023 {
+    width: 34px;
+    height: 84px;
+    background-color: #E78019;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+
+#january2024 {
+    width: 34px;
+    height: 112px;
+    background-color: #EFA011;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+
+#february2024, #march2024, #april2024 {
+    width: 34px;
+    height: 168px;
+    background-color: #F7C108;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+
+#may2024, #june2024, #july2024 {
+    width: 34px;
+    height: 196px;
+    background-color: #FFE100;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+
+#august2024, #september2024, #october2024 {
+    width: 34px;
+    height: 224px;
+    background-color: #EBE216;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+
+#november2024, #december2024 {
+    width: 34px;
+    height: 252px;
+    background-color: #D6E32B;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+
+#january2025, #february2025, #march2025 {
+    width: 34px;
+    height: 280px;
+    background-color: #C2E341;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+
+#april2025 {
+    width: 34px;
+    height: 308px;
+    background-color: #C2E341;
+    visibility: visible;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+}
