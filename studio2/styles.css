@@ -9,7 +9,7 @@ img {
     height: auto;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -28,33 +28,67 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 h1 {
     padding: 0.5em;
 }
 
+h2 {
+    padding-bottom: 1em;
+}
+
+h3 {
+    font-size: medium;
+    padding-top: 0.75em;
+}
+
 main {
     display: flex;flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
-#slider {
+#slider-container {
     width: 1104px;
     height: 20px;
     background-color: #878787;
     border-radius: 10px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-#slider-btn {
-    position: absolute;
-    width: 40px;
-    top: -10px;
-    left: 96%;
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1085px;
+    height: 20px;
+    background: #878787;
+    border-radius: 10px;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: 0.2s;
+  }
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    cursor: pointer;
+    border-radius: 15px;
+}
+  
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background: white;
+    cursor: pointer;
+    border-radius: 15px;
 }
 
 #dots {
@@ -81,6 +115,28 @@ section {
     justify-content: flex-end;
 }
 
+#lift {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    position: absolute;
+    top: -60px;
+    left: 12px;
+}
+
+#climb {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    position: absolute;
+    top: -63px;
+    left: 12px;
+}
+
+#lift > div > p, #climb > div > p {
+    line-height: 1.5;
+}
+
 #july2023 {
     width: 34px;
     height: 28px; /* start w/ 0, calc (28* height from data)*/
@@ -88,6 +144,7 @@ section {
     visibility: visible;
     transition: 0.5s;
     border-radius: 20px 20px 0 0;
+    position: relative;
 }
 
 #august2023, #september2023, #october2023, #november2023 {
@@ -115,6 +172,7 @@ section {
     visibility: visible;
     transition: 0.5s;
     border-radius: 20px 20px 0 0;
+    position: relative;
 }
 
 #february2024, #march2024, #april2024 {
