@@ -137,9 +137,19 @@ section {
     line-height: 1.5;
 }
 
+#april2023, #may2023, #june2023 {
+    width: 34px;
+    height: 0;
+    background-color: #D73F2A;
+    visibility: hidden;
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
 #july2023 {
     width: 34px;
-    height: 28px; /* start w/ 0, calc (28* height from data)*/
+    height: 0;
     background-color: #D73F2A;
     visibility: visible;
     transition: 0.5s;
@@ -149,7 +159,7 @@ section {
 
 #august2023, #september2023, #october2023, #november2023 {
     width: 34px;
-    height: 56px;
+    height: 0;
     background-color: #DF5F22;
     visibility: visible;
     transition: 0.5s;
@@ -158,7 +168,7 @@ section {
 
 #december2023 {
     width: 34px;
-    height: 84px;
+    height: 0;
     background-color: #E78019;
     visibility: visible;
     transition: 0.5s;
@@ -167,7 +177,7 @@ section {
 
 #january2024 {
     width: 34px;
-    height: 112px;
+    height: 0;
     background-color: #EFA011;
     visibility: visible;
     transition: 0.5s;
@@ -177,7 +187,7 @@ section {
 
 #february2024, #march2024, #april2024 {
     width: 34px;
-    height: 168px;
+    height: 0;
     background-color: #F7C108;
     visibility: visible;
     transition: 0.5s;
@@ -186,7 +196,7 @@ section {
 
 #may2024, #june2024, #july2024 {
     width: 34px;
-    height: 196px;
+    height: 0;
     background-color: #FFE100;
     visibility: visible;
     transition: 0.5s;
@@ -195,7 +205,7 @@ section {
 
 #august2024, #september2024, #october2024 {
     width: 34px;
-    height: 224px;
+    height: 0;
     background-color: #EBE216;
     visibility: visible;
     transition: 0.5s;
@@ -204,7 +214,7 @@ section {
 
 #november2024, #december2024 {
     width: 34px;
-    height: 252px;
+    height: 0;
     background-color: #D6E32B;
     visibility: visible;
     transition: 0.5s;
@@ -213,7 +223,7 @@ section {
 
 #january2025, #february2025, #march2025 {
     width: 34px;
-    height: 280px;
+    height: 0;
     background-color: #C2E341;
     visibility: visible;
     transition: 0.5s;
@@ -222,7 +232,7 @@ section {
 
 #april2025 {
     width: 34px;
-    height: 308px;
+    height: 0;
     background-color: #C2E341;
     visibility: visible;
     transition: 0.5s;
