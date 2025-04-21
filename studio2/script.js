@@ -24,12 +24,16 @@
         let currBar;
         let monthData;
 
-        if (currVal == 4) { // June 2023 id + 1. currVal starts at 1 indexing, month ids start at 0.
+        if (currVal >= 4) { // June 2023 id + 1. currVal starts at 1 indexing, month ids start at 0.
             liftPopup.style.visibility = "visible";
+        } else {
+            liftPopup.style.visibility = "hidden";
         }
 
-        if (currVal == 10) { // January 2024 id + 1.
+        if (currVal >= 10) { // January 2024 id + 1.
             climbPopup.style.visibility = "visible";
+        } else {
+            climbPopup.style.visibility = "hidden";
         }
 
         for (const year in data["year"]) {
