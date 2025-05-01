@@ -1,4 +1,4 @@
-date,Location,Latitude,Longitude,SST (°C),ph.level,Bleaching Severity,Species Observed,Marine Heatwave
+date,location,latitude,longitude,sst,pHlevel,bleachingseverity,speciesobserved,marineheatwave
 2015-01-01,Red Sea,20.0248,38.4931,29.47,8.107,None,106,FALSE
 2015-01-07,Great Barrier Reef,-18.2988,147.7782,29.65,8.004,High,116,FALSE
 2015-01-14,Caribbean Sea,14.9768,-75.0233,28.86,7.947,High,90,FALSE

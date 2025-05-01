@@ -8,25 +8,60 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-
-    <!-- My Styles -->
-    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400..700&display=swap" rel="stylesheet">
 
     <!-- Meta tag for mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- D3.js -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v6.js"></script>
 
+    <!-- Animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
     <!-- My Script -->
     <script src="script.js" defer></script>
+
+    <!-- Animate on scroll stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
 
 </head>
 
 <body>
-
+    <header>
+        <h1>Marine Ecosystems</h1>
+        <h2>Hawaiian Islands</h2>
+        <h3>2015-2023</h3>
+    </header>
+    <main>
+        <div class="chart-and-caption">
+            <section data-aos="fade-right">
+                <h4>pH Levels</h4>
+                <p>Ocean acidification is one of climate change's many tragedies, caused by the ocean's uptake of CO2. A decrease in pH, which corresponds to more acidity, creates a hostile environment for species that are acclimated to a more alkaline environment.</p>
+            </section>
+            <div class="chart" data-aos="fade-left">
+                <svg id="pH"></svg>
+            </div>
+        </div>
+        <div class="chart-and-caption">
+            <section data-aos="fade-right">
+                <h4>Sea Surface Temperature</h4>
+                <p>Another side affect of the ocean's uptake of greenhouse gases is a rise in sea surface temperatures. This adds to the difficulties marine species experience when trying to adapt to a rapidly changing environment.</p>
+            </section>
+            <div class="chart" data-aos="fade-left">
+                <svg id="sst"></svg>
+            </div>
+        </div>
+        <img id="arrow" src="images/arrow.svg" alt="arrow">
+    </main>
+    <footer>
+        <p>Libraries: <a href="https://michalsnik.github.io/aos/">Animate on Scroll</a>, <a href="https://d3js.org/">D3.js</a></p>
+        <p>Dataset: <a href="https://www.kaggle.com/datasets/atharvasoundankar/shifting-seas-ocean-climate-and-marine-life-dataset">Kaggle</a></p>
+    </footer>
 </body>
 </html>
-
-<!-- kaggle dataset
-https://www.kaggle.com/datasets/atharvasoundankar/shifting-seas-ocean-climate-and-marine-life-dataset -->
