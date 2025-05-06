@@ -1,0 +1,129 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Page styling */
+body {
+    background-color: #FFFEFB;
+    color: black;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+}
+
+body.switch {
+    background-color: rgb(235, 235, 235);
+    color: #333;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-width: 900px;
+    margin: auto;
+    padding-top: 1em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    color: #333;
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+}
+
+main {
+    margin: 0 auto;
+}
+
+#projects {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+main section {
+    flex: 1;
+    border-radius: 10px;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section a {
+    font-weight: 700;
+    font-size: large;
+    text-decoration: none;
+    line-height: 1.1em;
+    display: inline-block;
+    color: black;
+    padding: 1em 0;
+}
+
+section a:hover {
+    color: #7d7d7d;
+}
+
+button {
+    position: absolute;
+    top: 2.3em;
+    right: 0;
+    border: none;
+    background-color: transparent;
+}
+
+#toggle-circle {
+    position: absolute;
+    top: 6px;
+}
+
+.left {
+    left: 11px;
+    transition: all 0.5s;
+}
+
+.right {
+    left: calc(100% - 41px);
+    transition: all 0.5s;
+}
+
+#moon {
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    left: 18px;
+}
+
+#sun {
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    right: 17px;
+}
