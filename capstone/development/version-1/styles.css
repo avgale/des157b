@@ -1,0 +1,95 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Page styling */
+
+/*#conditions {
+    flex-direction: column;
+    line-height: 0;
+}
+
+.words {
+    outline: 1px solid red;
+}*/
+body {
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+    color: #980000;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.scroll-stage {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-image: url('images/grainy-bg.jpg');
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+}
+
+/* Title Slide */
+h1 {
+    font-size: 1em;
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+}
+
+#placeholder {
+    width: 50%;
+    height: 700px;
+}
+
+#fried-egg {
+    width: 70%;
+    position: absolute;
+    top: 25%;
+    right: -12%;
+    transform: rotate(-150deg);
+}
+
+/* Intro */
+#egg-carton {
+    flex: 2;
+}
+
+.questions {
+    flex: 1;
+}
+
+/* Conditions */
+#stage4, #stage6 {
+    flex-direction: column;
+    line-height: 0;
+}
