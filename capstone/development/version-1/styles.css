@@ -80,16 +80,29 @@ h1 {
 }
 
 /* Intro */
-#egg-carton {
+#carton-placeholder {
     flex: 2;
+}
+
+#egg-carton {
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    transform: translateX(-50%);
+    opacity: 0;
 }
 
 .questions {
     flex: 1;
+    padding-right: 75px;
 }
 
 /* Conditions */
 #stage4, #stage6 {
     flex-direction: column;
     line-height: 0;
+}
+
+#chickens {
+    width: 100%;
 }
