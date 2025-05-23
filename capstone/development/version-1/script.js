@@ -68,6 +68,18 @@
 
                 .fromTo("#stage9", { opacity: 0 }, { opacity: 1, duration: 0.5 })
                 .add(() => hoverEvents())
+                .to("#stage9", { opacity: 0, duration: 0.5 })
+
+                .fromTo("#stage10", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .add(() => splitAnimate("#stage10 p"), "-=0.5")
+                .to("#stage10", { opacity: 0, duration: 0.5 })
+
+                .fromTo("#stage11", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .add(() => splitAnimate("#stage11 p"), "-=0.5")
+                .to("#stage11", { opacity: 0, duration: 0.5 })
+
+                .fromTo("#stage12", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .add(() => splitAnimate("#stage12 p"), "-=0.5")
 
             // Handle interactive slider
             const slider = document.querySelector("#slider");

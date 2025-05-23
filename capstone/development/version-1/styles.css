@@ -268,3 +268,60 @@ h1 {
     z-index: -1;
     font-size: 0.5em;
 }
+
+/* Planet */
+
+#stage10 {
+    text-align: center;
+}
+
+#stage11 {
+    width: 70%;
+    gap: 10%;
+}
+
+#stage11 > p {
+    flex: 2;
+}
+
+#stage11 > div {
+    flex: 1;
+}
+
+#stage11 > div >img {
+    max-height: 50%;
+}
+
+#stage12 {
+    flex-direction: column;
+    padding: 10%;
+}
+
+.climate-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#stage12 > div > p, #gallon-caption {
+    flex: 2;
+    font-size: 0.5em;
+}
+
+#stage12 .nums {
+    flex: 1;
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0;
+}
+
+#gallon-stat {
+    flex: 1;
+}
+
+#gallons {
+    font-size: 0.5em;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 0 0 1em;
+}
