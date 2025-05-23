@@ -325,3 +325,82 @@ h1 {
     margin: 0;
     padding: 0 0 0 1em;
 }
+
+/* Futures */
+#stage13 {
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+    text-align: left;
+}
+
+.paris {
+    font-size: 0.7em;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+#buttons > a {
+    text-decoration: none;
+    color: white;
+    flex: 1;
+    border-radius: 10px;
+    padding: 40px 20px;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+#left-btn {
+    background-color:#980000;
+}
+
+#right-btn {
+    background-color:#9EAE5E;
+}
+
+/* Conclusion */
+#stage17 {
+    width: 80%;
+    gap: 40px;
+}
+
+#quote {
+    flex: 2;
+}
+
+#quotes-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#quotes-container > img {
+    width: 50%;
+}
+
+#author {
+    font-size: 0.5em;
+}
+
+/* Footer */
+footer {
+    background-color: #980000;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+}
+
+#copyright {
+    padding: 0;
+    margin: 0;
+}

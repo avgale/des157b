@@ -80,6 +80,26 @@
 
                 .fromTo("#stage12", { opacity: 0 }, { opacity: 1, duration: 0.5 })
                 .add(() => splitAnimate("#stage12 p"), "-=0.5")
+                .to("#stage12", { opacity: 0, duration: 0.5 })
+
+                .fromTo("#stage13", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .add(() => splitAnimate("#stage13 p"), "-=0.5")
+                .to("#stage13", { opacity: 0, duration: 0.5 })
+
+                .fromTo("#stage14", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .add(() => splitAnimate("#stage14 p"), "-=0.5")
+                .to("#stage14", { opacity: 0, duration: 0.5 })
+
+                .fromTo("#stage15", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .add(() => splitAnimate("#stage16 p"), "-=0.5")
+                .to("#stage15", { opacity: 0, duration: 0.5 })
+
+                .fromTo("#stage16", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .add(() => splitAnimate("#stage16 p"), "-=0.5")
+                .to("#stage16", { opacity: 0, duration: 0.5 })
+
+                .fromTo("#stage17", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .add(() => splitAnimate("#stage17 p"), "-=0.5")
 
             // Handle interactive slider
             const slider = document.querySelector("#slider");
