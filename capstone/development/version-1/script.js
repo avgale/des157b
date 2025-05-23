@@ -50,8 +50,8 @@
                 .to("#stage4", { opacity: 0, duration: 0.5 })
 
                 .fromTo("#stage5", { opacity: 0 }, { opacity: 1, duration: 0 })
-                .fromTo("#stage5", { y: 750}, { y: 0, duration: 0.5, ease: "power2.out" })
-                .to("#stage5", { y: -750, duration: 0.5, ease: "power2.in" })
+                .fromTo("#stage5", { y: 750}, { y: 0, duration: 1, ease: "power2.out" })
+                .to("#stage5", { y: -750, duration: 1, ease: "power2.in" })
                 .to("#stage5", { opacity: 0, duration: 0 })
 
                 .fromTo("#stage6", { opacity: 0 }, { opacity: 1, duration: 0.5 })
@@ -60,6 +60,38 @@
 
                 .fromTo("#stage7", { opacity: 0 }, { opacity: 1, duration: 0.5 })
                 .add(() => splitAnimate("#stage7 p"), "-=0.5")
+                .to("#stage7", { opacity: 0, duration: 0.5 })
+
+                .fromTo("#stage8", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .add(() => splitAnimate("#stage8 p"), "-=0.5")
+
+            // Handle interactive slider
+
+            const slider = document.querySelector("#slider");
+            const sliderValue = document.querySelector("#slider-value");
+            const greenDot = document.querySelector("#green-dot");
+            const greenDotLabel = document.querySelector("#green-dot-label");
+
+            // Update value label
+            slider.addEventListener("input", function(){
+                
+                const value = parseInt(slider.value);
+                const min = parseInt(slider.min);
+                const max = parseInt(slider.max);
+
+                const percent = (value - min) / (max - min);
+                const sliderWidth = slider.offsetWidth;
+                const thumbOffset = percent * sliderWidth;
+
+                sliderValue.textContent = value;
+                sliderValue.style.left = `${thumbOffset}px`;
+            });
+
+            // Show correct answer
+            slider.addEventListener("change", function(){
+                greenDot.style.opacity = "1";
+                greenDotLabel.style.opacity = "1";
+            });
 
         } catch (error) {
             console.log(`Fonts couldn't load: ${error}`);
