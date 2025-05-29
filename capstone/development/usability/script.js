@@ -173,6 +173,38 @@
                 });
             }
 
+            //Sources and Images overlays
+            const sources = document.querySelector("#sources");
+            const images = document.querySelector("#images");
+            const closeSources = document.querySelector("#close-sources");
+            const closeImages = document.querySelector("#close-images");
+            const sourcesOverlay = document.querySelector("#sources-overlay");
+            const imagesOverlay = document.querySelector("#images-overlay");
+
+            sources.addEventListener("click", function(event){
+                event.preventDefault();
+                sourcesOverlay.style.opacity = "1";
+                sourcesOverlay.style.zIndex = "1";
+            })
+
+            closeSources.addEventListener("click", function(event){
+                event.preventDefault();
+                sourcesOverlay.style.opacity = "0";
+                sourcesOverlay.style.zIndex = "-1";
+            })
+
+            images.addEventListener("click", function(event){
+                event.preventDefault();
+                imagesOverlay.style.opacity = "1";
+                imagesOverlay.style.zIndex = "1";
+            })
+
+            closeImages.addEventListener("click", function(event){
+                event.preventDefault();
+                imagesOverlay.style.opacity = "0";
+                imagesOverlay.style.zIndex = "-1";
+            })
+
         } catch (error) {
             console.log(`Fonts couldn't load: ${error}`);
         }
