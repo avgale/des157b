@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capstone Project Version 1</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="scroll-stage">
+        <img src="images/egg-carton.png" alt="happy egg co carton" id="egg-carton">
+        <div class="content" id="stage1">
+            <h1>It's <em>normal</em></h1>
+            <div id="placeholder"></div>
+            <img src="images/fried-egg.png" alt="fried egg in a pan" id="fried-egg">
+        </div>
+        <div class="content" id="stage2">
+            <div id="carton-placeholder"></div>
+            <p class="questions">What do <strong>you</strong> look for when buying eggs?</p>
+        </div>
+        <div class="content" id="stage3">
+            <div id="carton-placeholder"></div>
+            <p class="questions"><strong>Free Range?</strong><br>Cage Free?<br>Natural?</p>
+        </div>
+        <div class="content" id="stage4">
+            <p>What is <strong>Free Range</strong>?</p>
+            <p><strong>2 sq ft</strong> per hen</p>
+        </div>
+        <div class="content" id="stage5">
+            <img src="images/chickens.jpg" alt="free range chickens" id="chickens">
+        </div>
+        <div class="content" id="stage6">
+            <p>What is <strong>Cage Free</strong>?</p>
+            <p><strong>1.5 sq ft</strong> per hen</p>
+        </div>
+        <div class="content" id="stage7">
+            <img src="images/egg-carton.png" alt="happy egg co carton" id="carton-placeholder">
+            <p class="thoughts">Maybe the eggs are the lucky ones</p>
+        </div>
+        <div class="content" id="stage8">
+            <p>What is the average lifespan of a broiler chicken?</p>
+            <p id="guess">Take a guess</p>
+            <div id="slider-container">
+                <input id="slider" type="range" min="0" max="365" value="0" class="slider">
+                <p id="slider-value"></p>
+                <div id="green-dot"></div>
+                <p id="green-dot-label">40</p>
+            </div>
+            <div id="labels">
+                <p id="days"><strong>days</strong></p>
+                <div class="num-label">
+                    <p>0</p>
+                </div>
+                <div class="num-label">
+                    <p>365</p>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="stage9">
+            <div class="img-container">
+                <img src="images/ice-cream.png" alt="ice cream" id="ice-cream">
+                <p id="ice-cream-caption">“The overwhelming majority of U.S. dairy operations confine lactating and dry cows in primarily indoor systems, with only 9.9% of operations primarily raising lactating cows on pasture.”</p>
+            </div>
+            <div class="img-container">
+                <img src="images/yogurt.png" alt="ice cream" id="yogurt">
+                <p id="yogurt-caption">“26.3% of cows slaughtered are culled for reproductive issues.”</p>
+            </div>
+            <div class="img-container">
+                <img src="images/milk.png" alt="ice cream" id="milk">
+                <p id="milk-caption">“Tail-docking of dairy cows—the partial amputation of up to two-thirds of the tail—is a procedure typically performed without anesthetic [...] Without a tail, the cow may suffer disproportionately from fly bites, and the pain from the remaining stump may become chronic, comparable to phantom pain in humans after limb amputation.<br><br>A USDA survey in 2001 found that 50.5% of U.S. dairy operations practiced tail-docking.”</p>
+            </div>
+        </div>
+        <div class="content" id="stage10">
+            <p>If that's <em>normal</em>,<br>What is that mean for our future?</p>
+        </div>
+        <div class="content" id="stage11">
+            <p>what does it mean for the <strong>planet?</strong></p>
+            <div>
+                <img src="images/sapling.svg" alt="sapling" id="sapling">
+            </div>
+        </div>
+        <div class="content" id="stage12">
+            <div class="climate-stats">
+                <p class="nums"><strong>40%</strong></p>
+                <p>of all habitable land is used for activities related to raising and maintaining livestock</p>
+            </div>
+            <div class="climate-stats">
+                <p class="nums"><strong>18%</strong></p>
+                <p>of greenhouse gas emissions stem from animal agriculture. For reference, all transportation combined accounts for 13%.</p>
+            </div>
+            <div class="climate-stats">
+                <div id="gallon-stat">
+                    <p class="nums"><strong>1800</strong></p>
+                    <p id="gallons">gallons</p>
+                </div>
+                <p id="gallon-caption">of water are required to produce a pound of beef, leaving a massive water footprint.</p>
+            </div>
+        </div>
+        <div class="content" id="stage13">
+            <h1>Peek into the future</h1>
+            <p class="paris">The Paris Agreement defines a goal to limit global warming to 2°C above pre-industrial temperatures, while aiming for a more ambitious 1.5°C limit.<br><br>What does the year 2100 look like for our planet? </p>
+        </div>
+        <div class="content" id="stage14">
+            <p>Hover over the outlined areas!</p>
+            <img id="scene" src="images/stage1.svg" alt="city scene">
+            <div id="future-slider-container">
+                <input id="future-slider" type="range" min="0" max="7" value="0" class="future-slider">
+                <p id="future-slider-value"></p>
+                <div id="green-dot"></div>
+                <p id="green-dot-label">40</p>
+            </div>
+            <div id="labels">
+                <p id="days"><strong>year</strong></p>
+                <div class="num-label">
+                    <p>2025</p>
+                </div>
+                <div class="num-label">
+                    <p>2100</p>
+                </div>
+            </div>
+            <p>Captions here</p>
+        </div>
+        <div class="content" id="stage15">
+            <p>Ignorance is bliss</p>
+        </div>
+        <div class="content" id="stage16">
+            <div id="quote">
+                <p>How would we fare psychologically if the walls of slaughterhouses were made of glass?</p>
+                <p id="author"><strong>Tom Regan</strong><br>Professor of Philosophy at NC State University</p>
+            </div>
+            <div id="quotes-container">
+                <img src="images/quotes.svg" alt="quotation marks">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a id="sources" href="">Sources</a><br>
+        <div id="sources-overlay">
+            <p>C. Humane, ““Free Range” and “Pasture Raised” officially defined by HFAC for Certified Humane® label,” Certified Humane, Oct. 09, 2014. <a href="https://certifiedhumane.org/free-range-and-pasture-raised-officially-defined-by-hfac-for-certified-humane-label/" target="_blank">https://certifiedhumane.org/free-range-and-pasture-raised-officially-defined-by-hfac-for-certified-humane-label/</a></p>
+            <p>Z. Hausfather, “An assessment of current policy scenarios over the 21st century and the reduced plausibility of high-emissions pathways,” Dialogues on Climate Change., Jan. 2025, doi: <a href="https://journals.sagepub.com/doi/10.1177/29768659241304854" target="_blank">10.1177/29768659241304854.</a></p>
+            <p>M. B. Eisen and P. O. Brown, “Rapid global phaseout of animal agriculture has the potential to stabilize greenhouse gas levels for 30 years and offset 68 percent of CO2 emissions this century,” PLOS Climate, vol. 1, no. 2, p. e0000010, Feb. 2022, doi: <a href="https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000010" target="_blank">10.1371/journal.pclm.0000010.</a></p>
+            <p>The Humane Society of the United States, “The welfare of cows in the dairy industry,” Animal Studies Repository, 2009. <a href="https://www.wellbeingintlstudiesrepository.org/hsus_reps_impacts_on_animals/20/" target="_blank">https://www.wellbeingintlstudiesrepository.org/hsus_reps_impacts_on_animals/20/</a></p>
+            <a id="close-sources" href=""><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <a id="images" href="">Images</a>
+        <div id="images-overlay">
+            <p>2happy, Fried Egg. 2015. [Online]. Available: <a href="https://www.stockvault.net/photo/171901/fried-egg" target="_blank">https://www.stockvault.net/photo/171901/fried-egg</a></p>
+            <p>Horizon Organic, Horizon Organic Whole Milk. 2024. [Online]. Available: <a href="https://horizon.com/organic-dairy-products/organic-milk/organic-whole-milk/" target="_blank">https://horizon.com/organic-dairy-products/organic-milk/organic-whole-milk/</a></p>
+            <p>Yoplait Original Yogurt Low Fat Strawberry - 6 Oz. [Online]. Available: <a href="https://www.safeway.com/shop/product-details.136300049.html?productId=136300049&CMPID=ps_swy_noc_ecom_goo_20241106_21877483095_172858202842_2370825043188&psrc=g&gad_source=1&gad_campaignid=21877483095&gbraid=0AAAAADek7AjaQ9L-DdQmQqFuCv9vaVjeZ&gclid=CjwKCAjw56DBBhAkEiwAaFsG-gVitmQtWRuSHHwDUVQNQCiMETmjFe3rqSAgllhE8ItESEa7NQjgUhoCGVEQAvD_BwE&gclsrc=aw.ds" target="_blank">https://www.safeway.com/shop/product-details.136300049.html?productId=136300049&CMPID=ps_swy_noc_ecom_goo_20241106_21877483095_172858202842_2370825043188&psrc=g&gad_source=1&gad_campaignid=21877483095&gbraid=0AAAAADek7AjaQ9L-DdQmQqFuCv9vaVjeZ&gclid=CjwKCAjw56DBBhAkEiwAaFsG-gVitmQtWRuSHHwDUVQNQCiMETmjFe3rqSAgllhE8ItESEa7NQjgUhoCGVEQAvD_BwE&gclsrc=aw.ds</a></p>
+            <p>P. Foreman, The Happy Egg Co hit with ‘Landmark’ CMA complaint. 2025. [Online]. Available: <a href="https://plantbasednews.org/news/economics/the-happy-egg-co-cma-complaint/" target="_blank">https://plantbasednews.org/news/economics/the-happy-egg-co-cma-complaint/</a></p>
+            <p>the happy egg co. - Noble Foods. 2019. [Online]. Available: <a href="https://www.noblefoods.co.uk/egg-brands/the-happy-egg-co/" target="_blank">https://www.noblefoods.co.uk/egg-brands/the-happy-egg-co/</a></p>
+            <a id="close-images" href=""><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <p id="copyright">&copy; 2025 Amabel Gale</p>
+    </footer>
+</body>
+</html>
