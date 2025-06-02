@@ -176,7 +176,9 @@
 
             //Future slider
             const futureSlider = document.querySelector("#future-slider");
-            const futureImage = document.querySelector("#scene")
+            const futureImage = document.querySelector("#scene");
+            const hoverDiv = document.querySelector("#hover-div");
+            const textPopup = document.querySelector("#text-popup");
 
             futureSlider.addEventListener('input', function(){
                 let currVal = this.value;
@@ -185,19 +187,43 @@
                     futureImage.src = "images/stage1.svg";
                 } else if (currVal < 2) {
                     futureImage.src = "images/stage1-outline.svg";
+                    hoverDiv.style.width = "100px";
+                    hoverDiv.style.height = "50px";
+                    hoverDiv.style.left = "42%";
+                    hoverDiv.style.top = "15%";
                 } else if (currVal < 3) {
                     futureImage.src = "images/stage2.svg";
+                    hoverDiv.style.width = "270px";
+                    hoverDiv.style.height = "170px";
+                    hoverDiv.style.left = "75.5%";
+                    hoverDiv.style.top = "74%";
                 } else if (currVal < 4) {
                     futureImage.src = "images/stage2-outline.svg";
                 } else if (currVal < 5) {
                     futureImage.src = "images/stage3.svg";
+                    hoverDiv.style.width = "360px";
+                    hoverDiv.style.height = "200px";
+                    hoverDiv.style.left = "12%";
+                    hoverDiv.style.top = "30%";
                 } else if (currVal < 6) {
                     futureImage.src = "images/stage3-outline.svg";
                 } else if (currVal < 7) {
                     futureImage.src = "images/stage4.svg";
+                    hoverDiv.style.width = "475px";
+                    hoverDiv.style.height = "400px";
+                    hoverDiv.style.left = "53%";
+                    hoverDiv.style.top = "0%";
                 } else {
                     futureImage.src = "images/stage4-outline.svg";
                 }
+            });
+
+            hoverDiv.addEventListener("mouseover", function(){
+                textPopup.style.opacity = "1";
+            });
+
+            hoverDiv.addEventListener("mouseout", function(){
+                textPopup.style.opacity = "0";
             });
 
             //Sources and Images overlays

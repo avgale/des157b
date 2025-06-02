@@ -326,10 +326,42 @@ h1 {
 
 #stage14 > p {
     font-size: 0.5em;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 #scene {
-    width: 85%;
+    width: 100%;
+}
+
+#image-container {
+    position: relative;
+    width: 75%;
+}
+
+#hover-div {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 42%;
+    top: 15%;
+}
+
+#future-slider-container {
+    width: 75%;
+}
+
+#text-popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    font-size: 0.5em;
+    border-radius: 15px;
+    border: 5px solid #980000;
+    opacity: 0;
 }
 
 /* Conclusion */
