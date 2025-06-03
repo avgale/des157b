@@ -5,7 +5,7 @@
         try {
             await document.fonts.ready;
 
-            gsap.registerPlugin(ScrollTrigger, SplitText);
+            gsap.registerPlugin(ScrollTrigger, SplitText, ScrollToPlugin);
 
             gsap.set("#stage1", { opacity: 1 });
 
@@ -90,15 +90,18 @@
 
                 .fromTo("#stage14", { opacity: 0 }, { opacity: 1, duration: 0.5 })
                 .add(() => splitAnimate("#stage14 p"), "-=0.5")
+                .to("#next-arrow", { left: "93%", duration: 0 }, "-=0.5")
                 .to("#stage14", { zIndex: 1, duration: 0 }, "-=0.5")
                 .to("#stage14", { opacity: 0, duration: 0.5 })
 
                 .fromTo("#stage15", { opacity: 0 }, { opacity: 1, duration: 0.5 })
+                .to("#next-arrow", { left: "50%", duration: 0 }, "-=0.5")
                 .add(() => splitAnimate("#stage15 p"), "-=0.5")
                 .to("#stage15", { opacity: 0, duration: 0.5 })
 
                 .fromTo("#stage16", { opacity: 0 }, { opacity: 1, duration: 0.5 })
                 .add(() => splitAnimate("#stage16 p"), "-=0.5")
+                .to("#next-arrow", { opacity: 0, duration: 0 }, "-=0.5")
 
             // Handle interactive slider
             const slider = document.querySelector("#slider");
@@ -301,6 +304,36 @@
                 imagesOverlay.style.opacity = "0";
                 imagesOverlay.style.zIndex = "-1";
             })
+
+            //Navigation arrow
+            const arrow = document.querySelector("#next-arrow");
+            let target = timeline.scrollTrigger;
+            let currPosition;
+            let i = 1;
+
+            arrow.addEventListener('click', function(){
+                currPosition = i*(target.end/16);
+                if (i == 3) {
+                    currPosition = i*(target.end/16)+200;
+                }
+                if (i == 4) {
+                    currPosition = i*(target.end/16)+800;
+                }
+                if (i == 5) {
+                    currPosition = i*(target.end/16)+1000;
+                }
+                if (i >= 6) {
+                    currPosition = i*(target.end/16)+200;
+                }
+                if (i >= 10) {
+                    currPosition = i*(target.end/16);
+                }
+                gsap.to(window, { duration: 1, scrollTo: currPosition });
+            });
+
+            window.addEventListener('scroll', function(){
+                i = Math.round(window.scrollY/753)+1;
+            });
             
         } catch (error) {
             console.log(`Fonts couldn't load: ${error}`);
