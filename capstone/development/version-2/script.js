@@ -185,6 +185,10 @@
 
                 if (currVal < 1) {
                     futureImage.src = "images/stage1.svg";
+                    hoverDiv.style.width = "100px";
+                    hoverDiv.style.height = "50px";
+                    hoverDiv.style.left = "42%";
+                    hoverDiv.style.top = "15%";
                 } else if (currVal < 2) {
                     futureImage.src = "images/stage1-outline.svg";
                     hoverDiv.style.width = "100px";
@@ -197,24 +201,55 @@
                     hoverDiv.style.height = "170px";
                     hoverDiv.style.left = "75.5%";
                     hoverDiv.style.top = "74%";
+                    textPopup.style.left = "50%";
+                    textPopup.style.width = "50%";
+                    textPopup.innerHTML = "Animals are not the only victims of rapidly changing ecosystems. Plants, which are crucial to carbon sequestration and oxygen production, experience huge population losses as well."
                 } else if (currVal < 4) {
                     futureImage.src = "images/stage2-outline.svg";
+                    hoverDiv.style.width = "270px";
+                    hoverDiv.style.height = "170px";
+                    hoverDiv.style.left = "75.5%";
+                    hoverDiv.style.top = "74%";
+                    textPopup.style.left = "50%";
+                    textPopup.style.width = "50%";
                 } else if (currVal < 5) {
                     futureImage.src = "images/stage3.svg";
                     hoverDiv.style.width = "360px";
                     hoverDiv.style.height = "200px";
                     hoverDiv.style.left = "12%";
                     hoverDiv.style.top = "30%";
+                    textPopup.style.left = "70%";
+                    textPopup.style.top = "50%";
+                    textPopup.style.width = "45%";
+                    textPopup.innerHTML = "Global temperatures are expected to rise an average of 2.7°C (4.86°F) by the end of the century. Some estimates range as high as 3.7°C (6.66°F)."
                 } else if (currVal < 6) {
                     futureImage.src = "images/stage3-outline.svg";
+                    hoverDiv.style.width = "360px";
+                    hoverDiv.style.height = "200px";
+                    hoverDiv.style.left = "12%";
+                    hoverDiv.style.top = "30%";
+                    textPopup.style.left = "70%";
+                    textPopup.style.top = "50%";
+                    textPopup.style.width = "45%";
                 } else if (currVal < 7) {
                     futureImage.src = "images/stage4.svg";
                     hoverDiv.style.width = "475px";
                     hoverDiv.style.height = "400px";
                     hoverDiv.style.left = "53%";
                     hoverDiv.style.top = "0%";
+                    textPopup.style.left = "40%";
+                    textPopup.style.top = "65%";
+                    textPopup.style.width = "60%";
+                    textPopup.innerHTML = "Continued greenhouse gas emission will continue to pollute the atmosphere, resulting in unhealthy living conditions for humans and all of Earth's other inhabitants."
                 } else {
                     futureImage.src = "images/stage4-outline.svg";
+                    hoverDiv.style.width = "475px";
+                    hoverDiv.style.height = "400px";
+                    hoverDiv.style.left = "53%";
+                    hoverDiv.style.top = "0%";
+                    textPopup.style.left = "40%";
+                    textPopup.style.top = "65%";
+                    textPopup.style.width = "60%";
                 }
             });
 
