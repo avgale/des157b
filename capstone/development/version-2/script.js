@@ -94,7 +94,7 @@
                 .to("#stage14", { opacity: 0, duration: 0.5 })
 
                 .fromTo("#stage15", { opacity: 0 }, { opacity: 1, duration: 0.5 })
-                .add(() => splitAnimate("#stage16 p"), "-=0.5")
+                .add(() => splitAnimate("#stage15 p"), "-=0.5")
                 .to("#stage15", { opacity: 0, duration: 0.5 })
 
                 .fromTo("#stage16", { opacity: 0 }, { opacity: 1, duration: 0.5 })
@@ -301,7 +301,7 @@
                 imagesOverlay.style.opacity = "0";
                 imagesOverlay.style.zIndex = "-1";
             })
-
+            
         } catch (error) {
             console.log(`Fonts couldn't load: ${error}`);
         }

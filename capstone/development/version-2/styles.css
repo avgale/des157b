@@ -507,3 +507,13 @@ i {
 #sources-overlay a, #images-overlay a {
     color:#980000;
 }
+
+/* Navigation arrow */
+#next-arrow {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1;
+}
