@@ -68,7 +68,6 @@
                 .to("#stage8", { opacity: 0, duration: 0.5 })
 
                 .fromTo("#stage9", { opacity: 0 }, { opacity: 1, duration: 0.5 })
-                .add(() => hoverEvents(), "-0.5")
                 .to("#stage9", { zIndex: 1, duration: 0 }, "-=0.5")
                 .to("#stage9", { opacity: 0, duration: 0.5 })
 
@@ -129,6 +128,16 @@
             });
 
             // Hover Events
+            const instructionsOverlay = document.querySelector("#instructions-overlay");
+            const closeHover = document.querySelector("#close-hover");
+
+            closeHover.addEventListener("click", function(event){
+                event.preventDefault();
+                instructionsOverlay.style.opacity = "0";
+                instructionsOverlay.style.zIndex = "-1";
+                hoverEvents();
+            })
+
             function hoverEvents() {
                 const iceCream = document.querySelector("#ice-cream");
                 const iceCreamCaption = document.querySelector("#ice-cream-caption");
