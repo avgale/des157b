@@ -72,7 +72,7 @@ h1 {
 }
 
 /* Intro */
-#carton-placeholder {
+.carton-placeholder {
     flex: 2;
 }
 
@@ -189,7 +189,7 @@ h1 {
     font-size: 0.5em;
 }
 
-#days {
+#days, #years {
     position: absolute;
     top: 0;
     left: -3em;
