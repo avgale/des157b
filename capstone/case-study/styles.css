@@ -1,0 +1,102 @@
+/* CSS Resets */
+h1, h2, h3, h4, p, nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+}
+img { max-width: 100%; display: block; }
+* { box-sizing: border-box;}
+
+/* end Resets */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: black;
+}
+nav {
+    border-top: 2px solid #980000;
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color:#980000;
+    font-weight: bold;
+    border-bottom: 2px solid #980000;
+    text-align: center;
+    padding: 10px;
+
+}
+
+header, footer {
+    background-color: rgb(215, 178, 178);
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+section:nth-child(even){
+    background-color: rgb(255, 232, 232);
+}
+
+.container {
+    max-width: 1000px;
+}
+
+h1, h2 {
+    margin-bottom: .5em;
+}
+
+p {
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+ol li {
+    margin-bottom: 1em;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+#top-btn > a {
+    text-decoration: none;
+    background-color:rgb(145, 53, 53);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#top-btn {
+    margin-top: 2em;
+}
+
+#top-btn > a:hover {
+    background-color: rgb(159, 73, 73);
+}
+
+@media only screen and (min-width: 768px) {
+    nav ul { display: flex; }
+    nav ul li { flex: 1; }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container{ margin: auto; }
+    nav ul {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .content { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
