@@ -64,6 +64,7 @@ ol li {
 
 img {
     margin-bottom: 20px;
+    border: 2px solid #980000;
 }
 
 #top-btn > a {
@@ -86,6 +87,26 @@ img {
 @media only screen and (min-width: 768px) {
     nav ul { display: flex; }
     nav ul li { flex: 1; }
+    .side-by-side1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+    .side-by-side2 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+    }
+    .side-by-side3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .side-by-side4 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -96,7 +117,7 @@ img {
     }
     .content { 
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 }
