@@ -28,7 +28,6 @@ body {
 .scroll-stage {
     position: relative;
     height: 100vh;
-    max-height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;

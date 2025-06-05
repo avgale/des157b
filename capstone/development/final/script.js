@@ -332,7 +332,7 @@
             });
 
             window.addEventListener('scroll', function(){
-                i = Math.round(window.scrollY/753)+1;
+                i = Math.round(window.scrollY/this.window.innerHeight)+1;
             });
             
         } catch (error) {
